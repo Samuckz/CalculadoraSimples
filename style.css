@@ -1,0 +1,71 @@
+*{
+	text-decoration: none;
+}
+
+body{
+	background: #ccc;
+}
+
+.outside{
+	background: #3c3c3c;
+	width: 500px;
+	height: 700px;
+	position: relative;
+	left: 400px;
+	top: 50px;
+}
+
+.display{
+	background: seagreen; 
+	color: black;
+	width: 350px;
+	height: 100px;
+	margin-top: 50px;
+	padding: 15px;
+	font-size: 3em;
+}
+
+.power{
+	background: lightblue;
+	color: white;
+	width: 100px;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: -300px;
+
+}
+
+.power:active{
+	background: red;
+	color: black;
+}
+
+.power:hover{
+	cursor: pointer;
+}
+
+.botoes{
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+.botao{
+	color: black;
+	border: 1px solid darkslategrey;
+	font-size: 1.5em;
+	float: left;
+	width: 75px;
+	height: 50px;
+	margin: 20px;
+	line-height: 25px;
+}
+
+.botao:active{
+	background: dimgrey;
+	color: white;
+}
+
+.botao:hover{
+	cursor: pointer;
+	background: lightslategrey;
+}

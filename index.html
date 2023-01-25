@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora Simples</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+
+<body>
+
+	<!-- CORPO PRINCIPAL -->
+	<div class="outside" align="center">
+		
+		<!-- DISPLAY -->
+		<input 
+			id="display" 
+			type="text" 
+			disabled="disabled" 
+			class="display"
+			placeholder="0" 
+		>
+
+		<!-- PRIMEIROS BOTÕES -->
+		<div>
+			
+			<button type="button" id="power" class="power" onclick="limparDisplay()">CLEAR</button>
+
+		</div>
+
+		<!-- BOTÕES -->
+		<div class="botoes" align="center">
+			
+							<!-- 7, 8, 9, DIVISÃO -->
+			<button type="button" id="sete" class="botao" onclick="digitaTexto('7')">7</button>
+
+			<button type="button" id="oito" class="botao" onclick="digitaTexto('8')">8</button>
+
+			<button type="button" id="nove" class="botao" onclick="digitaTexto('9')">9</button>
+
+			<button type="button" id="divisao" class="botao" onclick="defineOperacao(':')">:</button>
+
+
+							<!-- 4, 5, 6, MULTIPLICAÇÃO -->
+			<button type="button" id="quatro" class="botao" onclick="digitaTexto('4')">4</button>
+
+			<button type="button" id="cinco" class="botao" onclick="digitaTexto('5')">5</button>
+
+			<button type="button" id="seis" class="botao" onclick="digitaTexto('6')">6</button>
+
+			<button type="button" id="multiplicacao" class="botao" onclick="defineOperacao('x')">X</button>
+
+			
+							<!-- 1, 2, 3, SUBTRAÇÃO -->
+			<button type="button" id="um" class="botao" onclick="digitaTexto('1')">1</button>
+
+			<button type="button" id="dois" class="botao" onclick="digitaTexto('2')">2</button>
+
+			<button type="button" id="tres" class="botao" onclick="digitaTexto('3')">3</button>
+
+			<button type="button" id="subtracao" class="botao" onclick="defineOperacao('-')">-</button>
+
+
+							<!-- 0, PONTO, ADIÇÃO, IGUAL -->			
+			<button type="button" id="zero" class="botao" onclick="digitaTexto('0')">0</button>
+
+			<button type="button" id="ponto" class="botao" onclick="digitaTexto('.')">.</button>
+
+			<button type="button" id="adicao" class="botao" onclick="defineOperacao('+')">+</button>
+
+			<button type="button" id="igual" class="botao" onclick="realizarOperacao()">=</button>
+		
+		</div>
+	</div>
+
+</body>
+</html>
